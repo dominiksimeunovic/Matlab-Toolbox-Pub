@@ -13,7 +13,7 @@ function fig = plotcompare(X, Y1, Y2, varargin)
     p = inputParser;
     p.addOptional('nameY1', 'Y1', @(x) (isstring(x) || ischar(x)))    
     p.addOptional('nameY2', 'Y2', @(x) (isstring(x) || ischar(x)))
-    p.addOptional('colormap', 'figures\colormap.mat', @(x) (isstring(x) || ischar(x)))
+    p.addOptional('colormap', 'colormap.mat', @(x) (isstring(x) || ischar(x)))
     p.parse(varargin{:});
     
 	X = posix2datetime(X);
