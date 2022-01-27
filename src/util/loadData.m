@@ -11,7 +11,7 @@ function [time, U, Y, X0, Ts] = loadData(path)
     time = data.time;
     U = [data.Phi.heater,data.phi.global,data.T.amb];
     Y = data.T.air;
-    X0 = [data.T.air(1);data.T.air(1);data.T.air(1)]; 
-    Ts = data.time(2)-data.time(1);
+    X0 = [data.T.air(1)]; 
+    Ts = 3600;
 end
 
