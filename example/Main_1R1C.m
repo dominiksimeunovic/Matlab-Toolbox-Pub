@@ -5,7 +5,7 @@ clc;
 clear;
 
 %% Create grey-box  model
-model = ExampleGreyBoxModel();
+model = GreyBoxModel_1R1C();
 
 %% Estimate grey-box model
 [t, U, Y, X0, Ts] = loadData('./data/training.mat');
